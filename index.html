@@ -6,8 +6,8 @@
   <style>
     /* Add your CSS styles here */
     body {
-      font-family: sans-serif;
-      background-color: #333;
+      font-family: 'Courier New', monospace;
+      background: linear-gradient(to right, #333, #666);
       color: #fff;
     }
 
@@ -27,6 +27,7 @@
     .header h1 {
       font-size: 2em;
       color: #5d5dff;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     }
 
     .header a {
@@ -45,6 +46,7 @@
     }
 
     .art-piece {
+      box-sizing: border-box;
       display: flex;
       align-items: center;
       margin-bottom: 20px;
@@ -93,11 +95,12 @@
         </div>
       </div>
       <div class="art-piece">
-        <img src="/images/image2.jpg" alt="Art piece 2">
-        <div>
+        <img src="/images/image2.jpg"
+      <div>
           <h2>Art Piece 2</h2>
           <p>Description of art piece 2</p>
-             </div>
+        </div>
+      </div>
       <div class="art-piece">
         <img src="/images/image3.jpg" alt="Art piece 3">
         <div>
@@ -115,7 +118,7 @@
     </div>
   </div>
   <script>
-     // Add your JavaScript code here
+    // Add your JavaScript code here
     const contactLink = document.querySelector('.header a');
 
     contactLink.addEventListener('click', function(event) {
