@@ -1,27 +1,127 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Braun's Portfolio</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <meta charset="utf-8">
+  <title>Blender Art Portfolio</title>
+  <style>
+    /* Add your CSS styles here */
+    body {
+      font-family: sans-serif;
+      background-color: #333;
+      color: #fff;
+    }
+
+    .main-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      font-size: 2em;
+      color: #5d5dff;
+    }
+
+    .header a {
+      text-decoration: none;
+      color: #5d5dff;
+    }
+
+    .header a:hover {
+      color: #8989ff;
+    }
+
+    .art-pieces {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      grid-gap: 20px;
+    }
+
+    .art-piece {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .art-piece img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-right: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.3s;
+    }
+
+    .art-piece img:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .art-piece h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #5d5dff;
+    }
+
+    .art-piece p {
+      font-size: 1em;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
   <div class="main-container">
     <div class="header">
-      <h1>Braun's Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/projects">Projects</a></li>
-          <li><a href="/arts">Arts</a></li>
-        </ul>
-      </nav>
+      <h1>Blender Art Portfolio</h1>
+      <a href="#">Contact</a>
     </div>
-    <div class="intro">
-      <h2>Welcome to my portfolio!</h2>
-      <p>I am a creative professional with a passion for design and art. On this site, you can find out more about me, see some of my projects, and view my art portfolio.</p>
-      <p>Thank you for visiting!</p>
+    <div class="art-pieces">
+      <!-- Add your art pieces here -->
+      <div class="art-piece">
+        <img src="image1.jpg" alt="Art piece 1">
+        <div>
+          <h2>Art Piece 1</h2>
+          <p>Description of art piece 1</p>
+        </div>
+      </div>
+      <div class="art-piece">
+        <img src="image2.jpg" alt="Art piece 2">
+        <div>
+          <h2>Art Piece 2</h2>
+          <p>Description of art piece 2</p>
+             </div>
+      <div class="art-piece">
+        <img src="image3.jpg" alt="Art piece 3">
+        <div>
+          <h2>Art Piece 3</h2>
+          <p>Description of art piece 3</p>
+        </div>
+      </div>
+      <div class="art-piece">
+        <img src="image4.jpg" alt="Art piece 4">
+        <div>
+          <h2>Art Piece 4</h2>
+          <p>Description of art piece 4</p>
+        </div>
+      </div>
     </div>
   </div>
+  <script>
+     // Add your JavaScript code here
+    const contactLink = document.querySelector('.header a');
+
+    contactLink.addEventListener('click', function(event) {
+      event.preventDefault();
+      alert('Thank you for contacting me! I will get back to you as soon as possible.');
+    });
+  </script>
 </body>
 </html>
