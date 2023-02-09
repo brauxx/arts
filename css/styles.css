@@ -4,40 +4,6 @@
   body {
     font-size: 18px;
   }
-  
-  .links {
-    display: flex;
-    margin-top: 10px;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-  }
-  
-  .links img {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-    margin-top: 4px;
-  }
-
-  .profile-container {
-    flex-direction: column;
-  }
-
-  .profile-info {
-    width: 80%;
-  }
-
-  .btn {
-    padding: 20px 60px!important;
-    font-size: 18px!important;
-    margin-bottom: 30px!important; 
-  }
-  
-  .cursor {
-  font-family: Arial, sans-serif;
-  }
-}
 
 @mixin sp-layout {
   @media screen and (max-width: 750px) {
@@ -51,6 +17,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   background: radial-gradient(ellipse at bottom, #0d1d31 0%, #0c0d13 100%);
+  max-width: 800px;
 }
 
 .stars {
