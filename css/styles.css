@@ -415,8 +415,8 @@ padding-right: 40px;
 z-index: 10;
 }
 
-.header.space {
-padding-inline: 350px;
+.header .space {
+    padding-inline: 375px;
 }
 
 .header.sticky {
