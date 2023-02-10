@@ -416,7 +416,7 @@ z-index: 10;
 }
 
 .header .space {
-    padding-inline: 375px;
+padding-inline: 375px;
 }
 
 .header.sticky {
